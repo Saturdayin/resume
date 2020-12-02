@@ -1,16 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__name">
+                <h1>
+                    Субботин Алексей
+                </h1>
+            </div>
+            <div class="header__position">
+                <p>HTML-верстальщик</p>
+            </div>
+            <div class="header__social">
+                <a href="https://github.com/saturdayin" target="_blank">
+                    <img src="../rezume/images/github-logo.png" alt="" class="header__social-img">
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio__title">
+                <h3>
+                    Портфолио
+                </h3>
+            </div>
+            <div class="portfolio__inner">
+                <div class="portfolio__inner-btn">
+                    <button type="button" data-filter="all">Все</button>
+                    <button type="button" data-filter=".category-lending">Лендинги</button>
+                    <button type="button" data-filter=".category-multiPage">Многостраничный сайт</button>
+                </div>
+                <div class="portfolio__inner-box">
+
+                    <div class="portfolio__item mix category-lending">
+                        <a href="https://saturdayin.github.io/ActiveBox/" class="portfolio__item-img"
+                            style="background-image: url(images/activeBox.png);" target="_blank"></a>
+                        <div class="portfolio__item-content">
+                            <div class="portfolio__item-name">
+                                <h4><a href="https://saturdayin.github.io/ActiveBox/" class="portfolio__item-title"
+                                    target="_blank">Active Box</a></h4>
+                            </div>
+                            <div class="portfolio__item-text">
+                                <p>В проекте использованы технологии:</p>
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>jquery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item mix category-multiPage">
+                        <a href="https://saturdayin.github.io/ActiveBox/" class="portfolio__item-img"
+                            style="background-image: url(images/activeBox.png);" target="_blank"></a>
+                        <div class="portfolio__item-name">
+                            <a href="https://saturdayin.github.io/ActiveBox/" class="portfolio__item-title"
+                                target="_blank">Active Box</a>
+                        </div>
+                        <div class="portfolio__item-text">
+                            <p>В проекте использованы:</p>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>jquery</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
