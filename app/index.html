@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body id="set"> 
     <header class="header">
         <div class="header__inner">
             <div class="header__name">
@@ -30,80 +30,91 @@
     </header>
     <section class="portfolio">
         <div class="container">
-            <div class="portfolio__title">
-                <h3>
-                    Портфолио
-                </h3>
-            </div>
-            <div class="portfolio__inner">
-                <div class="portfolio__inner-btn">
-                    <button type="button" data-filter="all">Все</button>
-                    <button type="button" data-filter=".category-lending">Лендинги</button>
-                    <button type="button" data-filter=".category-multiPage">Многостраничный сайт</button>
+            <div class="portfolio__wrapper">
+                <div class="portfolio__title">
+                    <h3>
+                        Портфолио
+                    </h3>
                 </div>
-                <div class="portfolio__inner-box">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner-btn">
+                        <button type="button" data-filter="all">Все</button>
+                        <button type="button" data-filter=".category-lending">Лендинги</button>
+                        <button type="button" data-filter=".category-multiPage">Многостраничный сайт</button>
+                    </div>
+                    <div class="portfolio__inner-box">
 
-                    <div class="portfolio__item mix category-lending">
-                        <a href="https://saturdayin.github.io/ActiveBox/" class="portfolio__item-img"
-                            style="background-image: url(images/activeBox.png);" target="_blank"></a>
-                        <div class="portfolio__item-content">
+                        <div class="portfolio__item mix category-lending">
+                            <a href="https://saturdayin.github.io/ActiveBox/" class="portfolio__item-img"
+                                style="background-image: url(images/activeBox.png);" target="_blank"></a>
+                            <div class="portfolio__item-content">
+                                <div class="portfolio__item-name">
+                                    <h4><a href="https://saturdayin.github.io/ActiveBox/" class="portfolio__item-title"
+                                            target="_blank">Active Box</a></h4>
+                                </div>
+                                <div class="portfolio__item-text">
+                                    <p>В проекте использованы технологии:</p>
+                                    <ul>
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>jquery</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__item mix category-multiPage">
+                            <a href="https://saturdayin.github.io/ActiveBox/" class="portfolio__item-img"
+                                style="background-image: url(images/activeBox.png);" target="_blank"></a>
                             <div class="portfolio__item-name">
-                                <h4><a href="https://saturdayin.github.io/ActiveBox/" class="portfolio__item-title"
-                                    target="_blank">Active Box</a></h4>
+                                <a href="https://saturdayin.github.io/ActiveBox/" class="portfolio__item-title"
+                                    target="_blank">Active Box</a>
                             </div>
                             <div class="portfolio__item-text">
-                                <p>В проекте использованы технологии:</p>
-                                <ul>
+                                <p>В проекте использованы:</p>
+                                <ul style="column-count: 2;">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>jquery</li>
                                     <li>HTML5</li>
                                     <li>CSS3</li>
                                     <li>jquery</li>
                                 </ul>
                             </div>
                         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </div>
-
-                    <div class="portfolio__item mix category-multiPage">
-                        <a href="https://saturdayin.github.io/ActiveBox/" class="portfolio__item-img"
-                            style="background-image: url(images/activeBox.png);" target="_blank"></a>
-                        <div class="portfolio__item-name">
-                            <a href="https://saturdayin.github.io/ActiveBox/" class="portfolio__item-title"
-                                target="_blank">Active Box</a>
-                        </div>
-                        <div class="portfolio__item-text">
-                            <p>В проекте использованы:</p>
-                            <ul>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>jquery</li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
                 </div>
-
-
-
             </div>
         </div>
 
     </section>
 
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
+    <script> VANTA.NET ({el: " #set ", mouseControls: true, touchControls: true, gyroControls: false, minHeight: 200.00, minWidth: 200.00, scale: 1.00, scaleMobile: 1.00}) </script>
+
 </body>
 
 </html>
