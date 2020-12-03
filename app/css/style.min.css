@@ -51,7 +51,7 @@ h3, h4, h5, h6, p {
 
 .header__name {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 52px;
 }
 
 .header__position p {
@@ -81,6 +81,7 @@ h3, h4, h5, h6, p {
   border: none;
   background-color: #fff;
   color: #263238;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 
