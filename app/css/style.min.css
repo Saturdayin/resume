@@ -112,7 +112,7 @@ h3, h4, h5, h6, p {
 }
 
 .portfolio__item-img {
-  min-height: 250px;
+  min-height: 220px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
