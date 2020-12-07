@@ -125,6 +125,11 @@ h3, h4, h5, h6, p {
   display: block;
 }
 
+.portfolio__item-img:hover {
+  background-color: #263238;
+  height: 220px;
+}
+
 .portfolio__item-content {
   padding: 10px 30px;
 }

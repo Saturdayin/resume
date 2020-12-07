@@ -73,6 +73,10 @@
             background-repeat: no-repeat;
             background-size: cover;
             display: block;
+            &:hover{
+                background-color: #263238;
+                height: 220px;
+            }
         }
         &-content{
             padding: 10px 30px;
