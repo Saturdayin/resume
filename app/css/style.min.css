@@ -11,14 +11,15 @@ html {
 }
 
 body {
-  background: -webkit-gradient(linear, left bottom, right top, from(#073358), to(#0a89f1));
-  background: -o-linear-gradient(bottom left, #073358, #0a89f1);
-  background: linear-gradient(to top right, #073358, #0a89f1);
+  background: -webkit-gradient(linear, left bottom, right top, from(#021627), to(#4caaf7));
+  background: -o-linear-gradient(bottom left, #021627, #4caaf7);
+  background: linear-gradient(to top right, #021627, #4caaf7);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 24px;
+  height: 100hv;
 }
 
 a {
@@ -45,7 +46,7 @@ h3, h4, h5, h6, p {
 .header__inner {
   text-align: center;
   color: #fff;
-  padding-top: 100px;
+  padding-top: 15px;
   padding-bottom: 100px;
 }
 
@@ -62,6 +63,64 @@ h3, h4, h5, h6, p {
 
 .header__social img {
   width: 40px;
+}
+
+.organizer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.organizer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 32px;
+  color: #fff;
+}
+
+.blink-colon {
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+@-webkit-keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.4;
+  }
+}
+
+.data-container {
+  margin-top: 6px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .portfolio {
@@ -154,4 +213,19 @@ h3, h4, h5, h6, p {
 .portfolio__item-text li {
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (max-width: 700px) {
+  .organizer-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 350px) {
+  .portfolio__item-content {
+    padding: 10px 10px;
+  }
 }
