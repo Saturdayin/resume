@@ -73,7 +73,7 @@
 
 .portfolio{
     padding-bottom: 100px;
-
+    
     &__title{
         text-align: center;
         color: #fff;
@@ -121,6 +121,7 @@
         margin: 0 auto;
     }
     &__item{
+       
         background-color: #fff;
         border: 1px solid #222b30;
         // max-width: 400px;
@@ -128,16 +129,17 @@
         margin-bottom: 30px;
         flex-basis: calc(25% - 30px);
         margin-left: 30px;
-        &-img{
+        &-img a{
             min-height: 220px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             display: block;
-            &:hover{
-                background-color: #263238;
-                height: 220px;
-            }
+            transition: all 0.5s ease-in;
+        }
+        &-img a:hover{
+        
+            opacity: 0.7;      
         }
         &-content{
             padding: 10px 10px 5px 30px;
@@ -161,6 +163,7 @@
         }
     }
 }
+
 
 
 

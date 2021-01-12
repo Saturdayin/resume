@@ -206,17 +206,19 @@ h3, h4, h5, h6, p {
   margin-left: 30px;
 }
 
-.portfolio__item-img {
+.portfolio__item-img a {
   min-height: 220px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
-.portfolio__item-img:hover {
-  background-color: #263238;
-  height: 220px;
+.portfolio__item-img a:hover {
+  opacity: 0.7;
 }
 
 .portfolio__item-content {
