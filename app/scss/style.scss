@@ -25,16 +25,26 @@
             width: 40px;
         }
     }
+    
 }
 
 
-.organizer-wrapper{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-    margin-right: 30px;
-}
 .organizer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    &__telephone{
+        align-items: center;
+    }
+    &__telephone a{
+        color: #fff;
+        font-size: 20px;
+
+    }
+}
+.organizer-wrapper{
+  
     // border: 10px solid rgb(0, 240, 240);
     // width: 300px;
     // height: 300px;
