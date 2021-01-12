@@ -73,7 +73,7 @@
     }
     &__inner{
         
-        &-btn{
+        &-buttons{
             text-align: center;
             margin-bottom: 60px;
             button{
@@ -94,15 +94,30 @@
         }
         &-box{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: flex-start;
             flex-wrap: wrap;
+            margin-left: -30px;
         }
+    }
+    &-btn{
+        transition: all 0.3s ease-in;
+    }
+    &-btn:hover{
+        background-color: rgb(170, 176, 250);
+        color: #030505;
+    }
+    &__wrapper{
+        max-width: 1920px;
+        margin: 0 auto;
     }
     &__item{
         background-color: #fff;
         border: 1px solid #222b30;
-        width: 400px;
+        // max-width: 400px;
+        width: 100%;
         margin-bottom: 30px;
+        flex-basis: calc(25% - 30px);
+        margin-left: 30px;
         &-img{
             min-height: 220px;
             background-position: center;
@@ -115,7 +130,7 @@
             }
         }
         &-content{
-            padding: 10px 30px;
+            padding: 10px 10px 5px 30px;
         }
         &-name{
             margin-bottom: 10px;

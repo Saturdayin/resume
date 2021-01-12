@@ -34,7 +34,7 @@ li {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1920px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -135,12 +135,12 @@ h3, h4, h5, h6, p {
   margin-bottom: 60px;
 }
 
-.portfolio__inner-btn {
+.portfolio__inner-buttons {
   text-align: center;
   margin-bottom: 60px;
 }
 
-.portfolio__inner-btn button {
+.portfolio__inner-buttons button {
   padding: 12px 21px;
   border: none;
   background-color: #fff;
@@ -149,7 +149,7 @@ h3, h4, h5, h6, p {
   cursor: pointer;
 }
 
-.portfolio__inner-btn button.mixitup-control-active {
+.portfolio__inner-buttons button.mixitup-control-active {
   background-color: #000;
   color: #fff;
 }
@@ -162,18 +162,38 @@ h3, h4, h5, h6, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.portfolio-btn {
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.portfolio-btn:hover {
+  background-color: #aab0fa;
+  color: #030505;
+}
+
+.portfolio__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .portfolio__item {
   background-color: #fff;
   border: 1px solid #222b30;
-  width: 400px;
+  width: 100%;
   margin-bottom: 30px;
+  -ms-flex-preferred-size: calc(25% - 30px);
+      flex-basis: calc(25% - 30px);
+  margin-left: 30px;
 }
 
 .portfolio__item-img {
@@ -190,7 +210,7 @@ h3, h4, h5, h6, p {
 }
 
 .portfolio__item-content {
-  padding: 10px 30px;
+  padding: 10px 10px 5px 30px;
 }
 
 .portfolio__item-name {
@@ -213,6 +233,31 @@ h3, h4, h5, h6, p {
 .portfolio__item-text li {
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (max-width: 1710px) {
+  .portfolio__item {
+    -ms-flex-preferred-size: calc(33.333333% - 30px);
+        flex-basis: calc(33.333333% - 30px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .portfolio__inner-box {
+    margin-left: -15px;
+  }
+  .portfolio__item {
+    -ms-flex-preferred-size: calc(50% - 15px);
+        flex-basis: calc(50% - 15px);
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .portfolio__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 @media (max-width: 700px) {
